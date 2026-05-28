@@ -35,15 +35,11 @@ The console will show any errors in your sketch.
 
 | File                           | Source                     |
 | ------------------------------ | -------------------------- | --- |
-| `assets/sounds/win.wav`        | ☆ Juicy Jules - Stardust ☆ | [2] |
-| `assets/sounds/demonmusic.mp3` | Made by Hasan Jadavji      | [3] |
-| `assets/sounds/SlapSound.wav`  | Made by Hasan Jadavji      | [4] |
-| `assets/images/portal.jpeg`    | Portal - steam.com         | [5] |
+| `assets/sounds/win.wav`        | ☆ Juicy Jules - Stardust ☆ | [1] |
+| `assets/sounds/demonmusic.mp3` | Made by Hasan Jadavji      | [2] |
+| `assets/sounds/SlapSound.wav`  | Made by Hasan Jadavji      | [3] |
+| `assets/images/portal.jpeg`    | Portal - steam.com         | [4] |
 
 ## References
 
-listener4me. n.d. _Win Sound Effect_. OpenGameArt.org. Retrieved May 1, 2026, from https://opengameart.org/content/win-sound-effect
-
-Pablo, Matthew. n.d. _Space Dimensions (Techno Version)_. OpenGameArt.org. Retrieved May 1, 2026, from https://opengameart.org/content/space-dimensions-techno-version
-
-Punch SFX. n.d. OpenGameArt.org. Retrieved May 1, 2026, from https://opengameart.org/content/punch-sfx
+[4] Valve Corporation. n.d. Steam User Uploaded Image. Steam Community. Retrieved May 27, 2026

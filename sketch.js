@@ -476,33 +476,47 @@ function checkHits() {
 // map() converts health (0–3) to bar width in pixels.
 // ------------------------------------------------------------
 function drawHealthBars() {
-  let barW = 200;
-  let barH = 18;
-  let barY = 45;
-  let padding = 30;
+  let heartSize = 28;
+  let spacing = 10;
+  let topY = 42;
+  let leftX = 50;
+  let rightX = width - 50;
 
-  // Player 1 health bar — left side, fills left to right
-  let p1W = map(fighter1.health, 0, fighter1.maxHealth, 0, barW);
-  fill(40);
-  rect(padding, barY, barW, barH, 4);
-  fill(0, 200, 180);
-  rect(padding, barY, p1W, barH, 4);
+  // Player 1 hearts
+  for (let i = 0; i < 3; i++) {
+    let x = leftX + i * (heartSize + spacing);
+    if (i < fighter1.health) {
+      fill(255, 50, 50);
+    } else {
+      fill(80);
+    }
+    drawHeart(x, topY, heartSize);
+  }
 
-  // Player 2 health bar — right side, fills right to left
-  let p2W = map(fighter2.health, 0, fighter2.maxHealth, 0, barW);
-  fill(40);
-  rect(width - padding - barW, barY, barW, barH, 4);
-  fill(255, 150, 30);
-  rect(width - padding - p2W, barY, p2W, barH, 4);
+  // Player 2 hearts
+  for (let i = 0; i < 3; i++) {
+    let x = rightX - i * (heartSize + spacing);
+    if (i < fighter2.health) {
+      fill(255, 50, 50);
+    } else {
+      fill(80);
+    }
+    drawHeart(x, topY, heartSize);
+  }
+}
 
-  // Labels
-  fill(255);
-  textSize(13);
+function drawHeart(x, y, size) {
+  push();
+  translate(x, y);
   noStroke();
-  textAlign(LEFT);
-  text("P1", padding, barY - 5);
-  textAlign(RIGHT);
-  text("P2", width - padding, barY - 5);
+  beginShape();
+  vertex(0, size * 0.35);
+  bezierVertex(0, -size * 0.15, -size * 0.5, -size * 0.15, -size * 0.5, size * 0.25);
+  bezierVertex(-size * 0.5, size * 0.65, 0, size * 0.85, 0, size);
+  bezierVertex(0, size * 0.85, size * 0.5, size * 0.65, size * 0.5, size * 0.25);
+  bezierVertex(size * 0.5, -size * 0.15, 0, -size * 0.15, 0, size * 0.35);
+  endShape(CLOSE);
+  pop();
 }
 
 // ------------------------------------------------------------
