@@ -33,12 +33,12 @@ The console will show any errors in your sketch.
 
 ## Assets
 
-| File                           | Source                     |
-| ------------------------------ | -------------------------- | --- |
-| `assets/sounds/win.wav`        | ☆ Juicy Jules - Stardust ☆ | [1] |
-| `assets/sounds/demonmusic.mp3` | Made by Hasan Jadavji      | [2] |
-| `assets/sounds/SlapSound.wav`  | Made by Hasan Jadavji      | [3] |
-| `assets/images/portal.jpeg`    | Portal - steam.com         | [4] |
+| File                               | Source                     |
+| ---------------------------------- | -------------------------- |
+| `assets/sounds/win.wav` [1]        | ☆ Juicy Jules - Stardust ☆ |
+| `assets/sounds/demonmusic.mp3` [2] | Made by Hasan Jadavji      |
+| `assets/sounds/SlapSound.wav` [3]  | Made by Hasan Jadavji      |
+| `assets/images/portal.jpeg` [4]    | Portal - steam.com         |
 
 ## References
 
